@@ -56,7 +56,7 @@ public class EmployeeUtils {
                 Employee.builder().name("Kolya").salary(9).build()
         );
 
-        Map<String, Employee> map = toMapNameVsEmployee(list);
+        Map<Seniority, Long> map = groupBySeniority(list);
         System.out.println(map);
     }
 
