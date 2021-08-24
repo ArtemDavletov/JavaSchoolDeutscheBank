@@ -1,4 +1,4 @@
-package lectures.lecture7.task2;
+package com.db.lectures.lecture7.task2;
 
 import lombok.SneakyThrows;
 

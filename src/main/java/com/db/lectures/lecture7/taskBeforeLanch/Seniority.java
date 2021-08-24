@@ -1,4 +1,4 @@
-package lectures.lecture7.taskBeforeLanch;
+package com.db.lectures.lecture7.taskBeforeLanch;
 
 public enum Seniority {
     JUN, MIDDLE, SENIOR;

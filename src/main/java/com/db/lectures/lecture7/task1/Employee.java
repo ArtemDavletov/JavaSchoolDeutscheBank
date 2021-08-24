@@ -1,4 +1,4 @@
-package lectures.lecture7.task1;
+package com.db.lectures.lecture7.task1;
 
 public class Employee {
     private Integer salary;

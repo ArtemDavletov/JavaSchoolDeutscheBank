@@ -1,4 +1,4 @@
-package lectures.lecture7.taskBeforeLanch;
+package com.db.lectures.lecture7.taskBeforeLanch;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
