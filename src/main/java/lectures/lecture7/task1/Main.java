@@ -1,4 +1,4 @@
-package lectures.lecture7;
+package lectures.lecture7.task1;
 
 import java.util.List;
 
