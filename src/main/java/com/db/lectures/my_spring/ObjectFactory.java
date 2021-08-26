@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.SneakyThrows;
 import org.reflections.Reflections;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
@@ -39,13 +40,18 @@ public class ObjectFactory {
         configure(t);
 
         // run init method
+        runPostConstructor(t);
+
+        return t;
+    }
+
+    @SneakyThrows
+    private <T> void runPostConstructor(T t) {
         for (Method method : t.getClass().getMethods()) {
             if (method.getName().startsWith("init")) {
                 method.invoke(t);
             }
         }
-
-        return t;
     }
 
     private <T> void configure(T t) {
